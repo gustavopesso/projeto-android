@@ -1,0 +1,193 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: 'Android';
+    src: url('../fontes/idrod.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84; 
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fonte-padrao: Arial, verdana, helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', arial;
+}
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+    margin: 0px;
+    
+}
+a.external::after{
+    content: '\00a0\1f517';
+}
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, #289E5A,#1D844A, #166F3B, #093f1f, #032712);
+    padding-top: 15px;
+    font-size: 1.2;
+    min-width: 150px;
+}
+header > h1{
+    color: var(--cor0);
+    font-family: var(--fonte-destaque);
+    font-size: 3em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.163);
+}
+header > p{
+    padding-right: 15px;
+    padding-left: 15px;
+    font-family: var(--fonte-padrao);
+    max-width: 600px;
+    margin: auto;
+    font-weight: normal;
+}
+main{
+    background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.518);
+    border-radius: 0px 0px 10px 10px;
+
+}
+main > h1{
+    color: var(--cor5);
+    font-family: var(--fonte-android);
+    font-weight: normal;
+    font-size: 1.8em;
+}
+main > h2{
+    font-family: var(--fonte-android);
+}
+img{
+    width: 100%;
+}
+.subtitulo{
+    color: white;
+    font-size: 1.2em;
+}
+article > h1{
+    font-family: 'Android', Arial, Helvetica, sans-serif;
+    color: var(--cor5);
+    text-align: left;
+    font-weight: 100;
+    padding-left: 17px;
+}
+h3{
+    background-image: linear-gradient(to right, rgba(5, 203, 31, 0.763), white);
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    color: rgb(2, 88, 2);
+    text-align: left;
+    margin-left: 7px;
+    padding-left: 7px;
+}
+nav{
+    text-align: left;
+    padding: 20px 10px 10px 10px;
+    box-shadow: 0px 7px 9px rgba(0, 0, 0, 0.207);
+}
+nav > a{
+    padding: 6px;
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+    margin-right: 20px;
+    border-radius: 7px;
+    padding: 6px 10px 6px 10px;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    background-color: var(--cor3);
+    text-decoration: underline;
+    color: var(--cor5);
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 45px;
+    line-height: 2em;
+    font-size: 1;
+}
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor5);
+}
+div.video{
+    background-color: var(--cor5);
+    margin: 0px -20px 30px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+aside{
+    background-color: var(--cor2);
+    text-align: center;
+    padding: 0px 0px 12px 0px;
+    width: unset;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    border-radius: 9px 9px 9px 9px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.429);
+}
+aside > p{
+    padding: 9px;
+}
+aside > ul{
+    list-style-type: '\2714\00a0';
+    text-align: justify;
+    list-style-position: inside;
+    columns: 2;
+    padding-right: 11px;
+}
+.titulosecundario{
+    background-color: #023C1A;
+    color: white;
+    text-align: left;
+    padding: 9px;
+    margin-top: 0px;
+    border-radius: 9px 9px 0px 0px;
+    box-shadow: #023C1A;
+    
+}
+.finalmain{
+    padding: 5px 50px 0px 50px;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    margin-top: 36px;
+    margin-bottom: 0px;
+    padding: 6px 0px 2px 0px;
+}
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: var(--cor1);
+}
